@@ -1,5 +1,5 @@
 ---
-Name: 🐞 Bug Report
+Name: '🐞 Bug Report'
 About: Area of Bug
 Title: A brief summary 🤔
 Labels: -label:bug
