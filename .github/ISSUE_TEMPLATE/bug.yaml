@@ -1,3 +1,4 @@
+---
 name: Issue (Bug Report)
 description: File a bug report to help us improve.
 title: "[Bug]: "
@@ -19,6 +20,13 @@ body:
       placeholder: email@example.com
     validations:
       required: false
+  - type: markdown
+    id: checklist
+    attributes:
+      label: 📋 Checklist
+      value: Make sure to add all the information needed to understand the bug so that someone can help. If the info is missing we'll add the 'Needs more information' label and close the issue until there is enough information.
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -64,3 +72,4 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
+---
