@@ -1,9 +1,9 @@
 ---
-Name: Bug Report
-About: Area of Bug
-Title: A brief summary 🤔
-Labels: -label:bug
-Assignees: '@*GitHub-UserName*'
+name: Bug Report
+about: Area of Bug
+title: A brief summary 🤔
+labels: -label:bug
+assignees: '@*GitHub-UserName*'
 ---
 
 # Issue (Bug Report)
