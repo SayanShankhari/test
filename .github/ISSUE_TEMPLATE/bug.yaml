@@ -1,21 +1,22 @@
-name: Bug Report
-description: File a bug report.
+name: Issue (🐞 Bug Report)
+description: File a bug report to help us improve.
 title: "[Bug]: "
 labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
+projects: ["DSA"]
 assignees:
-  - octocat
+  - "SayanShankhari, github-username, ..."
 body:
   - type: markdown
+  id: appreciation
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
     id: contact
     attributes:
-      label: Contact Details
+      label: 📨 Contact Details
       description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      placeholder: email@example.com
     validations:
       required: false
   - type: textarea
@@ -39,15 +40,16 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: terminal
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What terminal are you seeing the problem on?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Treminal
+        - iTerm2
+        - Kitty
+        - PuTTY
+        - Other (Please specify in description)
   - type: textarea
     id: logs
     attributes:
@@ -58,7 +60,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/TheScienceUniverse/DSA/blob/master/.github/CODE_OF_CONDUCT.md). 
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
