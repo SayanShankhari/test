@@ -11,7 +11,7 @@ body:
     id: appreciation
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        🙏 Thanks for taking the time to fill out this bug report!
   - type: input
     id: contact
     attributes:
@@ -23,7 +23,7 @@ body:
   - type: checkboxes
     id: checklist
     attributes:
-      label: 📋 Checklist
+      label: 📝 Checklist
       description: Make sure to add all the information needed to understand the bug so that someone can help. If the info is missing we'll add the 'Needs more information' label and close the issue until there is enough information.
       options:
         - label: Can you reproduce the problem in safe mode?
@@ -44,6 +44,23 @@ body:
         - label: Are you using Mac, Linux or Windows?
   - type: textarea
     attributes:
+      label: 📋 Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. In this environment...
+        2. With this config...
+        3. Run '...'
+        4. See error...
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📃 Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: textarea
+    attributes:
       label: ✔️ Expected Behavior
       description: A concise description of what you expected to happen.
     validations:
@@ -54,17 +71,6 @@ body:
       description: A concise description of what you're experiencing.
     validations:
       required: true
-  - type: textarea
-    attributes:
-      label: 🧾 Steps To Reproduce
-      description: Steps to reproduce the behavior.
-      placeholder: |
-        1. In this environment...
-        2. With this config...
-        3. Run '...'
-        4. See error...
-    validations:
-      required: false
   - type: dropdown
     id: version
     attributes:
@@ -79,7 +85,7 @@ body:
   - type: dropdown
     id: terminal
     attributes:
-      label: What terminal are you seeing the problem on?
+      label: ⌨ What terminal are you seeing the problem on?
       multiple: true
       options:
         - Terminal
@@ -87,18 +93,12 @@ body:
         - Kitty
         - PuTTY
         - Other (Please specify in description)
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
+      label: 📜 Code of Conduct
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/TheScienceUniverse/DSA/blob/master/.github/CODE_OF_CONDUCT.md).
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: 🤝 I agree to follow this project's Code of Conduct
           required: true
 ---
