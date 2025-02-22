@@ -20,7 +20,7 @@ body:
       placeholder: email@example.com
     validations:
       required: false
-  - type: markdown
+  - type: textarea
     id: checklist
     attributes:
       label: 📋 Checklist
