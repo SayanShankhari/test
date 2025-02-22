@@ -4,7 +4,7 @@ title: "[Bug]: "
 labels: ["bug", "triage"]
 projects: ["DSA"]
 assignees:
-  - "SayanShankhari, github-username, ..."
+  - SayanShankhari
 body:
   - type: markdown
   id: appreciation
