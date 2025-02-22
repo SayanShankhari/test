@@ -20,13 +20,14 @@ body:
       placeholder: email@example.com
     validations:
       required: false
-  - type: textarea
+  - type: checkboxes
     id: checklist
     attributes:
       label: 📋 Checklist
-      value: Make sure to add all the information needed to understand the bug so that someone can help. If the info is missing we'll add the 'Needs more information' label and close the issue until there is enough information.
-    validations:
-      required: true
+      description: Make sure to add all the information needed to understand the bug so that someone can help. If the info is missing we'll add the 'Needs more information' label and close the issue until there is enough information.
+      options:
+        - label: Can you reproduce the problem in safe mode?
+          required: true
   - type: textarea
     id: what-happened
     attributes:
