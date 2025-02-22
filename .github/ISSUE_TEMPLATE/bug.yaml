@@ -15,7 +15,7 @@ body:
   - type: input
     id: contact
     attributes:
-      label: Contact Details
+      label: 📨 Contact Details
       description: How can we get in touch with you if we need more info?
       placeholder: email@example.com
     validations:
@@ -27,34 +27,48 @@ body:
       description: Make sure to add all the information needed to understand the bug so that someone can help. If the info is missing we'll add the 'Needs more information' label and close the issue until there is enough information.
       options:
         - label: Can you reproduce the problem in safe mode?
-          required: false
         - label: Are you running the latest version?
-          required: false
+          required: true
         - label: Did you check the debugging guide?
-          required: false
         - label: Are you reporting to the correct repository?
-          required: false
+          required: true
         - label: Did you perform a cursory search?
         - label: Is this something you can debug and fix? Send a pull request! Bug fixes and documentation fixes are welcome.
+          required: true
         - label: Have an idea for a feature? Post the feature request on Product Pains. It has a voting system to surface the important issues. GitHub issues should only be used for bugs.
         - label: Provide a minimal code snippet example that reproduces the bug.
+          required: true
         - label: Provide screenshots where appropriate
         - label: What's the version of compiler you're using?
         - label: Does this occur on iOS, Android or both?
         - label: Are you using Mac, Linux or Windows?
   - type: textarea
-    id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: ✔️ Expected Behavior
+      description: A concise description of what you expected to happen.
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: ❗ Current Behavior
+      description: A concise description of what you're experiencing.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 🧾 Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. In this environment...
+        2. With this config...
+        3. Run '...'
+        4. See error...
+    validations:
+      required: false
   - type: dropdown
     id: version
     attributes:
-      label: Version
+      label: 🏷️ Version
       description: What version of our software are you running?
       options:
         - 1.0.2 (Default)
