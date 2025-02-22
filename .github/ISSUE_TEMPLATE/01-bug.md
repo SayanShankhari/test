@@ -1,5 +1,5 @@
 ---
-name: Bug Report
+Name: Bug Report
 about: Area of Bug
 title: A brief summary 🤔
 labels: -label:bug
