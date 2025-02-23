@@ -93,9 +93,9 @@ body:
         - Mac OSX
         - Other (Please specify in description)
   - type: dropdown
-    id: 🔀 compiler
+    id: compiler
     attributes:
-      label: ⌨ What terminal are you seeing the problem on?
+      label: 🔀 What terminal are you seeing the problem on?
       multiple: true
       options:
         - GCC
@@ -103,14 +103,16 @@ body:
         - MinGW
         - Other (Please specify in description)
   - type: dropdown
-    id: compiler
+    id: terminal
     attributes:
       label: ⌨ What terminal are you seeing the problem on?
       multiple: true
       options:
         - Terminal
+        - Konsole
         - iTerm2
         - Kitty
+        - Alacritty
         - PuTTY
         - Other (Please specify in description)
   - type: checkboxes
