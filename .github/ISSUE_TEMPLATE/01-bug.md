@@ -1,13 +1,14 @@
+---
+name: Bug Report
+about: Create a report to help us improve
+title: A brief summary 🤔
+labels: ["bug"]
+assignees: GitHub-UserName
+---
+
 # Issue (Bug Report)
 
 ## ⭐ Title
-
-<!--- Fill up the table with your changes proprly -->
-
-| Name | About | Title | Labels | Assignees |
-| :---: | :---: | :---: | :---: | :---: |
-| 🐞 Bug Report | Area of Bug | A brief summary 🤔 | -label:bug | @*GitHub-UserName* |
-
 
 ## 📋 Checklist:
 
