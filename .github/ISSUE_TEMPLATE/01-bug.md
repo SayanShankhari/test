@@ -1,5 +1,5 @@
 ---
-name: Issue (🐞 Bug Report)
+name: Bug Report
 about: Create a report to help us improve
 title: A brief summary 🤔
 labels: ["bug"]
