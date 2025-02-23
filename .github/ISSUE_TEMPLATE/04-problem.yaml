@@ -1,8 +1,8 @@
 ---
-name: Issue (🐞 Bug Report)
+name: Issue (⚠️ Found a Problem)
 description: File a bug report to help us improve.
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["invalid"]
 projects: ["DSA"]
 assignees:
   - github-username
