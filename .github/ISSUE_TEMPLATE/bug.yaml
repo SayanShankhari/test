@@ -1,5 +1,5 @@
 ---
-name: Issue (Bug Report)
+name: Issue (🐞 Bug Report)
 description: File a bug report to help us improve.
 title: "[Bug]: "
 labels: ["bug", "triage"]
@@ -83,7 +83,27 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: terminal
+    id: operating-system
+    attributes:
+      label: 🖳 What Operating System are you seeing the problem on?
+      multiple: true
+      options:
+        - Linux
+        - Windows
+        - Mac OSX
+        - Other (Please specify in description)
+  - type: dropdown
+    id: 🔀 compiler
+    attributes:
+      label: ⌨ What terminal are you seeing the problem on?
+      multiple: true
+      options:
+        - GCC
+        - Clang
+        - MinGW
+        - Other (Please specify in description)
+  - type: dropdown
+    id: compiler
     attributes:
       label: ⌨ What terminal are you seeing the problem on?
       multiple: true
